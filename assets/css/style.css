@@ -153,6 +153,10 @@ h6 {
   }
 }
 
+.empty-class {
+  background-color: none;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1103,4 +1107,32 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+
+
+/* Estilos para la bandera redonda */
+#language-switcher a {
+  position: fixed;
+  top: 20px; /* Ajusta la posición verticalmente según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontalmente según tus necesidades */
+  z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
+/* Estilo para los botones de bandera */
+#english-button, #spanish-button {
+  background: none; /* Elimina el fondo */
+  border: none; /* Elimina el borde */
+  width: 24px; /* Ajusta el tamaño según tus necesidades (por ejemplo, 24px) */
+  height: 24px; /* Ajusta el tamaño según tus necesidades (por ejemplo, 24px) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina el relleno interno */
+  cursor: pointer;
+}
+
+/* Estilos adicionales para el botón (hover, etc.) */
+#english-button:hover, #spanish-button:hover {
+  background-color: transparent; /* Cambia el color de fondo al pasar el cursor */
 }
